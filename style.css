@@ -31,6 +31,9 @@ body {
   font-size: 20px;
   font-weight: 700;
 }
+.header .information h1 span {
+  display: block;
+}
 .header .links {
   display: flex;
   flex-direction: row;
@@ -54,6 +57,37 @@ body {
   height: 220px;
 }
 
-h1 span {
+.challengeButtons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.challengeButtons .on-siteButton {
+  background-color: #8ACFE5;
+  color: #011827;
+  border: none;
+  font-weight: bold;
+  font-size: 16px;
+  width: 215px;
+  height: 50px;
+  border-radius: 2.5px;
+  cursor: pointer;
+  margin: 20px 0px 15px 0px;
+}
+.challengeButtons .onlineButton {
+  border: none;
+  background-color: transparent;
+  color: #36769D;
+  font-weight: 700;
+  font-size: 11.3px;
+  line-height: 9.5px;
+  display: inline;
+  cursor: pointer;
+  margin: 0;
+  padding: 10px 30px 10px 30px;
+}
+.challengeButtons .onlineButton::after {
+  content: "";
   display: block;
+  border-bottom: 0.8px solid #36769D;
 }
