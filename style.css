@@ -5,13 +5,12 @@ html {
 body {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 .header {
-  margin: 0;
-  padding: 0;
   background-color: #011827;
-  width: 100vw;
+  width: 100%;
   padding-bottom: 20px;
 }
 .header .information {
@@ -21,7 +20,6 @@ body {
 .header .information .logo {
   width: 110px;
   height: 80px;
-  margin: 0;
   margin-top: 15px;
   margin-left: 20px;
 }
@@ -45,7 +43,7 @@ body {
   color: #FFFFFF;
   margin: 0;
   padding: 35px 65px 20px 65px;
-  font-size: 24px;
+  font-size: 10px;
   font-weight: 700;
   display: none;
 }
@@ -53,7 +51,7 @@ body {
 .image {
   margin: 0;
   padding: 0;
-  width: 100vw;
+  width: 100%;
   height: 220px;
 }
 
@@ -80,14 +78,44 @@ body {
   color: #36769D;
   font-weight: 700;
   font-size: 11.3px;
-  line-height: 9.5px;
+  line-height: 8.5px;
   display: inline;
   cursor: pointer;
-  margin: 0;
   padding: 10px 30px 10px 30px;
 }
 .challengeButtons .onlineButton::after {
   content: "";
   display: block;
   border-bottom: 0.8px solid #36769D;
+}
+
+.reviewBlock:nth-child(2) {
+  display: none;
+}
+
+.reviews {
+  display: flex;
+}
+.reviews .reviewBlock {
+  padding-left: 15px;
+  margin-top: 30px;
+}
+.reviews .reviewBlock .reviewText {
+  display: flex;
+}
+.reviews .reviewBlock .reviewText p {
+  margin: 0px 0px 4px 15px;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 17px;
+  padding-right: 33px;
+}
+.reviews .reviewBlock .reviewText img {
+  width: 50px;
+  height: 50px;
+  padding-top: 2px;
+}
+.reviews .reviewBlock small {
+  margin-left: 65px;
+  font-size: 13px;
 }
