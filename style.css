@@ -1,3 +1,9 @@
+.challengeButtons .onlineButton::after {
+  content: "";
+  display: block;
+  border-bottom: 0.8px solid #36769D;
+}
+
 html {
   font-family: "Roboto", sans-serif;
 }
@@ -59,6 +65,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 20px;
 }
 .challengeButtons .on-siteButton {
   background-color: #8ACFE5;
@@ -70,7 +77,7 @@ body {
   height: 50px;
   border-radius: 2.5px;
   cursor: pointer;
-  margin: 20px 0px 15px 0px;
+  margin: 0px 0px 15px 0px;
 }
 .challengeButtons .onlineButton {
   border: none;
@@ -83,11 +90,6 @@ body {
   cursor: pointer;
   padding: 10px 30px 10px 30px;
 }
-.challengeButtons .onlineButton::after {
-  content: "";
-  display: block;
-  border-bottom: 0.8px solid #36769D;
-}
 
 .reviewBlock:nth-child(2) {
   display: none;
@@ -95,10 +97,10 @@ body {
 
 .reviews {
   display: flex;
+  margin-top: 30px;
 }
 .reviews .reviewBlock {
   padding-left: 15px;
-  margin-top: 30px;
 }
 .reviews .reviewBlock .reviewText {
   display: flex;
@@ -125,12 +127,14 @@ body {
   font-size: 24.5px;
   display: flex;
   justify-content: center;
+  margin-top: 70px;
 }
 
 .challengesTab {
   display: flex;
   overflow-x: auto;
   white-space: nowrap;
+  margin-bottom: 25px;
 }
 
 .popularChallenges:nth-child(2) {
@@ -148,7 +152,6 @@ body {
   min-width: 260px;
   height: 310px;
   box-shadow: 0px 1px 6px #B6BDB5;
-  margin-bottom: 30px;
   margin-left: 50px;
   border-radius: 7px;
 }
@@ -206,4 +209,110 @@ body {
   border-radius: 3px;
   padding: 10px 25px;
   margin-left: 119px;
+}
+
+.story {
+  background-color: #011827;
+  text-align: center;
+  margin-top: 30px;
+  padding: 60px 0px 70px;
+  width: 100%;
+}
+.story * {
+  margin: 0;
+}
+.story p {
+  color: #FFFFFF;
+  font-size: 20px;
+  padding: 10px 16px 40px 16px;
+}
+.story button {
+  background-color: transparent;
+  color: #8ACFE5;
+  border: 1.5px solid #8ACFE5;
+  font-weight: bolder;
+  font-size: 16px;
+  width: 215px;
+  height: 50px;
+  border-radius: 2.5px;
+  cursor: pointer;
+}
+
+.on-siteChallenges {
+  padding-bottom: 25px;
+}
+.on-siteChallenges * {
+  margin: 0;
+  padding: 0;
+}
+.on-siteChallenges img {
+  width: 100%;
+  height: 260px;
+  margin-bottom: 5px;
+}
+.on-siteChallenges h2 {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 10px 0px 20px 15px;
+}
+.on-siteChallenges p {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 19px;
+  padding-bottom: 10px;
+  margin: 10px 0px 20px 15px;
+}
+.on-siteChallenges button {
+  background-color: #E3170A;
+  color: #FFFFFF;
+  border: none;
+  font-weight: bolder;
+  font-size: 16px;
+  width: 215px;
+  height: 50px;
+  border-radius: 2.5px;
+  cursor: pointer;
+  margin: 10px 0px 20px 15px;
+}
+
+.onlineChallenges {
+  padding-bottom: 25px;
+}
+.onlineChallenges * {
+  margin: 0;
+  padding: 0;
+}
+.onlineChallenges img {
+  width: 100%;
+  height: 260px;
+  margin-bottom: 5px;
+}
+.onlineChallenges h2 {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 10px 0px 20px 15px;
+}
+.onlineChallenges p {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 19px;
+  padding-bottom: 10px;
+  margin: 10px 0px 20px 15px;
+}
+.onlineChallenges button {
+  background-color: #E3170A;
+  color: #FFFFFF;
+  border: none;
+  font-weight: bolder;
+  font-size: 16px;
+  width: 215px;
+  height: 50px;
+  border-radius: 2.5px;
+  cursor: pointer;
+  margin: 10px 0px 20px 15px;
+}
+.onlineChallenges h2 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 }

@@ -1,3 +1,97 @@
+@mixin on-siteButtonStyle {
+    background-color: #8ACFE5;
+    color: #011827;
+    border: none;
+    font-weight: bolder;
+    font-size: 16px;
+    width: 215px;
+    height: 50px;
+    border-radius: 2.5px;
+    cursor: pointer;
+}
+
+@mixin smallOnlineButtonStyle {
+
+    border: none;
+    background-color: transparent;
+    color: #36769D;
+    font-weight: 700;
+    font-size: 11.3px;
+    line-height: 8.5px;
+    display: inline;
+    cursor: pointer;
+}
+
+%borderBottom {
+
+    &::after {
+        content: "";
+        display: block;
+        border-bottom: 0.8px solid#36769D;
+    }
+
+}
+
+@mixin storyButtonStyle {
+    background-color: transparent;
+    color: #8ACFE5;
+    border: 1.5px solid #8ACFE5;
+    font-weight: bolder;
+    font-size: 16px;
+    width: 215px;
+    height: 50px;
+    border-radius: 2.5px;
+    cursor: pointer;
+}
+
+@mixin redButtonStyle {
+    background-color: #E3170A;
+    color: #FFFFFF;
+    border: none;
+    font-weight: bolder;
+    font-size: 16px;
+    width: 215px;
+    height: 50px;
+    border-radius: 2.5px;
+    cursor: pointer;
+}
+
+$challengeMargins: 10px 0px 20px 15px;
+
+@mixin challengesStyle {
+    padding-bottom: 25px;
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    img {
+        width: 100%;
+        height: 260px;
+        margin-bottom: 5px;
+    }
+
+    h2 {
+        font-size: 25px;
+        font-weight: bold;
+        margin: $challengeMargins;
+    }
+
+    p {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 19px;
+        padding-bottom: 10px;
+        margin: $challengeMargins;
+    }
+
+    button {
+        @include redButtonStyle;
+        margin: $challengeMargins;
+    }
+}
+
 html {
     font-family: 'Roboto', sans-serif;
 }
@@ -66,37 +160,17 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 20px;
 
     .on-siteButton {
-        background-color: #8ACFE5;
-        color: #011827;
-        border: none;
-        font-weight: bolder;
-        font-size: 16px;
-        width: 215px;
-        height: 50px;
-        border-radius: 2.5px;
-        cursor: pointer;
-        margin: 20px 0px 15px 0px;
+        @include on-siteButtonStyle;
+        margin: 0px 0px 15px 0px;
     }
 
     .onlineButton {
-        border: none;
-        background-color: transparent;
-        color: #36769D;
-        font-weight: 700;
-        font-size: 11.3px;
-        line-height: 8.5px;
-        display: inline;
-        cursor: pointer;
+        @include smallOnlineButtonStyle;
         padding: 10px 30px 10px 30px;
-    }
-
-    .onlineButton::after {
-        content: "";
-        display: block;
-        border-bottom: 0.8px solid#36769D;
-
+        @extend %borderBottom;
     }
 }
 
@@ -106,10 +180,11 @@ body {
 
 .reviews {
     display: flex;
+    margin-top: 30px;
 
     .reviewBlock {
         padding-left: 15px;
-        margin-top: 30px;
+
 
         .reviewText {
             display: flex;
@@ -141,12 +216,14 @@ body {
     font-size: 24.5px;
     display: flex;
     justify-content: center;
+    margin-top: 70px;
 }
 
 .challengesTab {
     display: flex;
     overflow-x: auto;
     white-space: nowrap;
+    margin-bottom: 25px;
 }
 
 .popularChallenges:nth-child(2) {
@@ -164,7 +241,6 @@ body {
     min-width: 260px;
     height: 310px;
     box-shadow: 0px 1px 6px #B6BDB5;
-    margin-bottom: 30px;
     margin-left: 50px;
     border-radius: 7px;
 
@@ -232,5 +308,41 @@ body {
         border-radius: 3px;
         padding: 10px 25px;
         margin-left: 119px;
+    }
+}
+
+.story {
+    background-color: #011827;
+    text-align: center;
+    margin-top: 30px;
+    padding: 60px 0px 70px;
+    width: 100%;
+
+    * {
+        margin: 0;
+    }
+
+    p {
+        color: #FFFFFF;
+        font-size: 20px;
+        padding: 10px 16px 40px 16px;
+    }
+
+    button {
+        @include storyButtonStyle;
+    }
+}
+
+.on-siteChallenges {
+    @include challengesStyle;
+}
+
+.onlineChallenges {
+    @include challengesStyle;
+
+    h2 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
     }
 }
