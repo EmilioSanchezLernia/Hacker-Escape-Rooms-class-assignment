@@ -6,11 +6,13 @@
 
 html {
   font-family: "Roboto", sans-serif;
+  height: 100%;
 }
 
 body {
   margin: 0;
   padding: 0;
+  height: 100%;
   box-sizing: border-box;
 }
 
@@ -19,23 +21,23 @@ body {
   width: 100%;
   padding-bottom: 20px;
 }
-.header .information {
+.header .branding {
   display: flex;
   flex-direction: row;
 }
-.header .information .logo {
+.header .branding .logo {
   width: 115px;
   height: 80px;
   margin-top: 15px;
   margin-left: 20px;
 }
-.header .information h1 {
+.header .branding h1 {
   color: #FFFFFF;
   margin: 18px 0px 5px 8.5px;
   font-size: 20px;
   font-weight: 700;
 }
-.header .information h1 span {
+.header .branding h1 span {
   display: block;
 }
 .header .links {
@@ -91,13 +93,12 @@ body {
   padding: 10px 30px 10px 30px;
 }
 
-.reviewBlock:nth-child(2) {
-  display: none;
-}
-
 .reviews {
   display: flex;
   margin-top: 30px;
+}
+.reviews .reviewBlock:nth-child(2) {
+  display: none;
 }
 .reviews .reviewBlock {
   padding-left: 15px;
@@ -136,17 +137,14 @@ body {
   white-space: nowrap;
   margin-bottom: 25px;
 }
-
-.popularChallenges:nth-child(2) {
+.challengesTab .popularChallenges:nth-child(2) {
   margin-left: 44px;
 }
-
-.popularChallenges:nth-child(3) {
+.challengesTab .popularChallenges:nth-child(3) {
   margin-left: 44px;
   margin-right: 50px;
 }
-
-.popularChallenges {
+.challengesTab .popularChallenges {
   box-sizing: content-box;
   width: 260px;
   min-width: 260px;
@@ -155,52 +153,52 @@ body {
   margin-left: 50px;
   border-radius: 7px;
 }
-.popularChallenges * {
+.challengesTab .popularChallenges * {
   margin: 0;
   padding: 0;
 }
-.popularChallenges img {
+.challengesTab .popularChallenges img {
   width: 100%;
   height: 150px;
   border-top-left-radius: 7px;
   border-top-right-radius: 7px;
 }
-.popularChallenges h2 {
+.challengesTab .popularChallenges h2 {
   font-size: 19px;
   font-weight: 400;
   padding: 2px 0px 1px 12px;
 }
-.popularChallenges .stars {
+.challengesTab .popularChallenges .stars {
   display: flex;
   align-items: center;
   padding-left: 14px;
   padding-bottom: 5px;
 }
-.popularChallenges .stars .filledStar {
+.challengesTab .popularChallenges .stars .filledStar {
   width: 10px;
   height: 10px;
   background-image: url("Filled star.png");
   background-size: cover;
   margin-right: 6px;
 }
-.popularChallenges .stars .emptyStar {
+.challengesTab .popularChallenges .stars .emptyStar {
   width: 10px;
   height: 10px;
   background-image: url("Empty star.png");
   background-size: cover;
   margin-right: 10px;
 }
-.popularChallenges .stars small {
+.challengesTab .popularChallenges .stars small {
   font-size: 10px;
 }
-.popularChallenges p {
+.challengesTab .popularChallenges p {
   font-size: 13px;
   padding: 10px 13px;
 }
-.popularChallenges p span {
+.challengesTab .popularChallenges p span {
   display: block;
 }
-.popularChallenges button {
+.challengesTab .popularChallenges button {
   border: none;
   background-color: #E3170A;
   color: #FFFFFF;
@@ -314,5 +312,40 @@ body {
 .onlineChallenges h2 {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.footer {
+  background-color: #011827;
+  color: #FFFFFF;
+  padding: 50px 20px 50px 20px;
+}
+.footer * {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+.footer .information h4 {
+  margin-bottom: 6.5px;
+}
+.footer .information p {
+  margin-bottom: 40px;
+}
+.footer .siteMap h4 {
+  margin-bottom: 6.5px;
+}
+.footer .siteMap p {
+  display: flex;
+  flex-direction: column;
+}
+.footer .siteMap p:nth-of-type(2) {
+  margin-top: 1.5em;
+  margin-bottom: 40px;
+}
+.footer .socialMedia h4 {
+  margin-bottom: 6.5px;
+}
+.footer .socialMedia p {
+  display: flex;
   flex-direction: column;
 }
