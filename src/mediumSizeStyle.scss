@@ -115,13 +115,14 @@
         display: flex;
         justify-content: center;
         margin-top: 70px;
+        margin-bottom: 50px;
     }
 
     .challengesTab {
         display: flex;
         overflow-x: auto;
         white-space: nowrap;
-        margin-bottom: 25px;
+        margin-bottom: 50px;
 
         .popularChallenges:nth-child(2) {
             margin-left: 40px;
@@ -213,7 +214,7 @@
     .story {
         background-color: #011827;
         text-align: center;
-        margin-top: 30px;
+        margin-top: 50px;
         padding: 60px 0px 70px;
         width: 100%;
 
@@ -224,7 +225,7 @@
         p {
             color: #FFFFFF;
             font-size: 20px;
-            padding: 10px 16px 40px 16px;
+            padding: 10px 20% 40px;
         }
 
         button {
@@ -233,23 +234,21 @@
     }
 
     .on-siteChallenges {
-        @include challengesStyle;
+        @include mediumChallengesStyle;
     }
 
     .onlineChallenges {
-        @include challengesStyle;
-
-        h2 {
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: column;
-        }
+        @include mediumChallengesStyle;
+        flex-direction: row-reverse;
     }
 
     .footer {
         background-color: #011827;
         color: #FFFFFF;
-        padding: 50px 20px 50px 20px;
+        padding: 10% 10% 15px;
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
 
         * {
             @include removeMarginAndPadding;
@@ -266,7 +265,14 @@
             }
         }
 
+        div {
+            display: flex;
+            flex-direction: row;
+        }
+
         .siteMap {
+            margin-right: 50px;
+
             h4 {
                 margin-bottom: $bottomMargins;
             }

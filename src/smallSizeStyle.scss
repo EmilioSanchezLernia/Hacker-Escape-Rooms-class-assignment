@@ -3,7 +3,7 @@
     .header {
         background-color: #011827;
         width: 100%;
-        padding-bottom: 10px;
+        padding-bottom: 15px;
 
         .branding {
             display: flex;
@@ -38,7 +38,7 @@
                 flex-direction: row;
                 color: #FFFFFF;
                 margin: 0;
-                padding: 35px 65px 20px 65px;
+                padding: 35px 65px 20px;
                 font-size: 10px;
                 font-weight: 700;
                 display: none;
@@ -235,7 +235,7 @@
         p {
             color: #FFFFFF;
             font-size: 20px;
-            padding: 10px 16px 40px 16px;
+            padding: 10px 10% 40px;
         }
 
         button {
@@ -244,23 +244,17 @@
     }
 
     .on-siteChallenges {
-        @include challengesStyle;
+        @include smallChallengesStyle;
     }
 
     .onlineChallenges {
-        @include challengesStyle;
-
-        h2 {
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: column;
-        }
+        @include smallChallengesStyle;
     }
 
     .footer {
         background-color: #011827;
         color: #FFFFFF;
-        padding: 50px 20px 50px 20px;
+        padding: 50px 20px;
 
         * {
             @include removeMarginAndPadding;
