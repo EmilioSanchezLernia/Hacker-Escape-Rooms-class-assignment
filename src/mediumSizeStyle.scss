@@ -29,12 +29,12 @@
             }
         }
 
-        .links {
+        .menu {
             display: flex;
             flex-direction: row;
             justify-content: center;
 
-            p {
+            a {
                 display: flex;
                 flex-direction: row;
                 color: #FFFFFF;
@@ -44,7 +44,7 @@
                 font-weight: 700;
             }
 
-            p:hover {
+            a:hover {
                 color: #8ACFE5
             }
         }
@@ -225,7 +225,7 @@
         p {
             color: #FFFFFF;
             font-size: 20px;
-            padding: 10px 20% 40px;
+            padding: 10px 29% 40px;
         }
 
         button {
