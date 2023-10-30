@@ -1,30 +1,33 @@
-@media screen and (min-width: 619px) {
+@media screen and (min-width: 1001px) {
 
     .header {
         background-color: #011827;
         width: 100%;
-        padding-bottom: 15px;
+        padding-bottom: 20px;
 
         .branding {
             display: flex;
             flex-direction: row;
-            margin-bottom: 10px;
+            margin-bottom: 20px;
 
             .logo {
-                width: 135px;
-                height: 90px;
+                width: 145px;
+                height: 100px;
                 margin-top: 15px;
                 margin-left: 20px;
             }
 
             h1 {
+                display: flex;
+                flex-direction: row;
+                align-items: flex-end;
                 color: #FFFFFF;
                 margin: 18px 0px 5px 8.5px;
-                font-size: 2.3rem;
+                font-size: 3rem;
                 font-weight: 700;
 
                 span {
-                    display: block;
+                    margin-right: 8px;
                 }
             }
         }
@@ -32,7 +35,7 @@
         .menu {
             display: flex;
             flex-direction: row;
-            justify-content: space-evenly;
+            justify-content: center;
 
             a {
                 display: flex;
@@ -40,7 +43,7 @@
                 color: #FFFFFF;
                 margin: 0;
                 padding: 15px 40px 0px 40px;
-                font-size: 1.6rem;
+                font-size: 2.1rem;
                 font-weight: 700;
             }
 
@@ -54,27 +57,32 @@
     .largeImage {
         @include removeMarginAndPadding;
         width: 100%;
-        height: 290px;
-        margin-bottom: 10px;
+        height: 440px;
     }
 
     .smallImage {
         display: none;
     }
 
+    body {
+        .challengeButtons:first-of-type {
+            transform: translateY(-50px);
+        }
+    }
+
     .challengeButtons {
         display: flex;
         flex-direction: row-reverse;
         justify-content: center;
-        margin-top: 10px;
+        margin-top: 20px;
 
         .on-siteButton {
             @include on-siteButtonStyle;
-            margin-left: 30px;
+            margin-left: 15px;
         }
 
         .onlineButton {
-            @include redButtonStyle;
+            @include largeRedButtonStyle;
         }
     }
 
@@ -97,14 +105,14 @@
                 }
 
                 img {
-                    width: 55px;
-                    height: 55px;
+                    width: 50px;
+                    height: 50px;
                     padding-top: 2px;
                 }
             }
 
             small {
-                margin-left: 70px;
+                margin-left: 65px;
                 font-size: 1.3rem;
             }
         }
@@ -116,14 +124,14 @@
         display: flex;
         justify-content: center;
         margin-top: 70px;
-        margin-bottom: 20px;
+        margin-bottom: 50px;
     }
 
     .challengesTab {
         display: flex;
         overflow-x: auto;
         white-space: nowrap;
-        padding: 30px 50px 50px;
+        padding-bottom: 50px;
 
         .popularChallenges:nth-child(2) {
             margin-left: 40px;
@@ -235,18 +243,18 @@
     }
 
     .on-siteChallenges {
-        @include mediumChallengesStyle;
+        @include largeChallengesStyle;
     }
 
     .onlineChallenges {
-        @include mediumChallengesStyle;
+        @include largeChallengesStyle;
         flex-direction: row-reverse;
     }
 
     .footer {
         background-color: #011827;
         color: #FFFFFF;
-        padding: 7% 7% 15px;
+        padding: 10% 10% 15px;
         margin-top: 100px;
         display: flex;
         flex-direction: column;

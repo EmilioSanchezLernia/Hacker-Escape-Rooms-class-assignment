@@ -1,5 +1,6 @@
 html {
   font-family: "Roboto", sans-serif;
+  font-size: 10px;
   height: 100%;
 }
 
@@ -9,402 +10,6 @@ body {
   box-sizing: border-box;
 }
 
-@media screen and (min-width: 619px) {
-  .header {
-    background-color: #011827;
-    width: 100%;
-    padding-bottom: 15px;
-  }
-  .header .branding {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 10px;
-  }
-  .header .branding .logo {
-    width: 115px;
-    height: 80px;
-    margin-top: 15px;
-    margin-left: 20px;
-  }
-  .header .branding h1 {
-    color: #FFFFFF;
-    margin: 18px 0px 5px 8.5px;
-    font-size: 20px;
-    font-weight: 700;
-  }
-  .header .branding h1 span {
-    display: block;
-  }
-  .header .menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-  .header .menu a {
-    display: flex;
-    flex-direction: row;
-    color: #FFFFFF;
-    margin: 0;
-    padding: 15px 40px 0px 40px;
-    font-size: 14px;
-    font-weight: 700;
-  }
-  .header .menu a:hover {
-    color: #8ACFE5;
-  }
-  .largeImage {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 240px;
-  }
-  .smallImage {
-    display: none;
-  }
-  .challengeButtons {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    margin-top: 20px;
-  }
-  .challengeButtons .on-siteButton {
-    background-color: #8ACFE5;
-    color: #011827;
-    border: none;
-    font-weight: bolder;
-    font-size: 16px;
-    width: 215px;
-    height: 50px;
-    border-radius: 2.5px;
-    cursor: pointer;
-    margin-left: 30px;
-  }
-  .challengeButtons .onlineButton {
-    background-color: #E3170A;
-    color: #FFFFFF;
-    border: none;
-    font-weight: bolder;
-    font-size: 16px;
-    width: 215px;
-    height: 50px;
-    border-radius: 2.5px;
-    cursor: pointer;
-  }
-  .reviews {
-    display: flex;
-    margin-top: 30px;
-  }
-  .reviews .reviewBlock {
-    padding-left: 15px;
-  }
-  .reviews .reviewBlock .reviewText {
-    display: flex;
-  }
-  .reviews .reviewBlock .reviewText p {
-    margin: 0px 0px 4px 15px;
-    font-style: italic;
-    font-weight: 550;
-    font-size: 17px;
-    padding-right: 50px;
-  }
-  .reviews .reviewBlock .reviewText img {
-    width: 50px;
-    height: 50px;
-    padding-top: 2px;
-  }
-  .reviews .reviewBlock small {
-    margin-left: 65px;
-    font-size: 13px;
-  }
-  .popularChallengesName {
-    font-weight: 400;
-    font-size: 24.5px;
-    display: flex;
-    justify-content: center;
-    margin-top: 70px;
-    margin-bottom: 50px;
-  }
-  .challengesTab {
-    display: flex;
-    overflow-x: auto;
-    white-space: nowrap;
-    margin-bottom: 50px;
-  }
-  .challengesTab .popularChallenges:nth-child(2) {
-    margin-left: 40px;
-  }
-  .challengesTab .popularChallenges:nth-child(3) {
-    margin-left: 40px;
-    margin-right: 40px;
-  }
-  .challengesTab .popularChallenges {
-    box-sizing: content-box;
-    width: 260px;
-    min-width: 260px;
-    height: 310px;
-    box-shadow: 0px 1px 6px #B6BDB5;
-    margin-left: 40px;
-    border-radius: 7px;
-  }
-  .challengesTab .popularChallenges * {
-    margin: 0;
-    padding: 0;
-  }
-  .challengesTab .popularChallenges img {
-    width: 100%;
-    height: 150px;
-    border-top-left-radius: 7px;
-    border-top-right-radius: 7px;
-  }
-  .challengesTab .popularChallenges h2 {
-    font-size: 19px;
-    font-weight: 400;
-    padding: 2px 0px 1px 12px;
-  }
-  .challengesTab .popularChallenges .stars {
-    display: flex;
-    align-items: center;
-    padding-left: 14px;
-    padding-bottom: 5px;
-  }
-  .challengesTab .popularChallenges .stars .filledStar {
-    width: 10px;
-    height: 10px;
-    background-image: url("Filled star.png");
-    background-size: cover;
-    margin-right: 6px;
-  }
-  .challengesTab .popularChallenges .stars .emptyStar {
-    width: 10px;
-    height: 10px;
-    background-image: url("Empty star.png");
-    background-size: cover;
-    margin-right: 10px;
-  }
-  .challengesTab .popularChallenges .stars small {
-    font-size: 10px;
-  }
-  .challengesTab .popularChallenges p {
-    font-size: 13px;
-    padding: 10px 13px;
-  }
-  .challengesTab .popularChallenges p span {
-    display: block;
-  }
-  .challengesTab .popularChallenges button {
-    border: none;
-    background-color: #E3170A;
-    color: #FFFFFF;
-    font-weight: 700;
-    font-size: 11px;
-    border-radius: 3px;
-    padding: 10px 25px;
-    margin-left: 119px;
-    cursor: pointer;
-  }
-  .story {
-    background-color: #011827;
-    text-align: center;
-    margin-top: 50px;
-    padding: 60px 0px 70px;
-    width: 100%;
-  }
-  .story * {
-    margin: 0;
-    padding: 0;
-  }
-  .story p {
-    color: #FFFFFF;
-    font-size: 20px;
-    padding: 10px 29% 40px;
-  }
-  .story button {
-    background-color: transparent;
-    color: #8ACFE5;
-    border: 1.5px solid #8ACFE5;
-    font-weight: bolder;
-    font-size: 16px;
-    width: 215px;
-    height: 50px;
-    border-radius: 2.5px;
-    cursor: pointer;
-  }
-  .on-siteChallenges {
-    padding-bottom: 25px;
-    display: flex;
-    flex-direction: row;
-    padding: 0px;
-    height: 310px;
-  }
-  .on-siteChallenges * {
-    margin: 0;
-    padding: 0;
-  }
-  .on-siteChallenges img {
-    width: 50%;
-    height: 100%;
-  }
-  .on-siteChallenges div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0.5%;
-  }
-}
-@media screen and (min-width: 619px) and (min-width: 669px) {
-  .on-siteChallenges div {
-    padding: 2%;
-  }
-}
-@media screen and (min-width: 619px) and (min-width: 850px) {
-  .on-siteChallenges div {
-    width: 40%;
-    padding: 3%;
-  }
-}
-@media screen and (min-width: 619px) {
-  .on-siteChallenges h2 {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    font-size: 22px;
-    font-weight: bold;
-    margin: 10px 0px 20px 15px;
-    margin-top: 0;
-  }
-  .on-siteChallenges p {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    font-size: 16px;
-    padding-bottom: 10px;
-    margin: 10px 0px 20px 15px;
-    margin-bottom: 0px;
-  }
-  .on-siteChallenges button {
-    background-color: #E3170A;
-    color: #FFFFFF;
-    border: none;
-    font-weight: bolder;
-    font-size: 16px;
-    width: 215px;
-    height: 50px;
-    border-radius: 2.5px;
-    cursor: pointer;
-    margin: 10px 0px 20px 15px;
-    margin-bottom: 0;
-  }
-  .onlineChallenges {
-    padding-bottom: 25px;
-    display: flex;
-    flex-direction: row;
-    padding: 0px;
-    height: 310px;
-    flex-direction: row-reverse;
-  }
-  .onlineChallenges * {
-    margin: 0;
-    padding: 0;
-  }
-  .onlineChallenges img {
-    width: 50%;
-    height: 100%;
-  }
-  .onlineChallenges div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0.5%;
-  }
-}
-@media screen and (min-width: 619px) and (min-width: 669px) {
-  .onlineChallenges div {
-    padding: 2%;
-  }
-}
-@media screen and (min-width: 619px) and (min-width: 850px) {
-  .onlineChallenges div {
-    width: 40%;
-    padding: 3%;
-  }
-}
-@media screen and (min-width: 619px) {
-  .onlineChallenges h2 {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    font-size: 22px;
-    font-weight: bold;
-    margin: 10px 0px 20px 15px;
-    margin-top: 0;
-  }
-  .onlineChallenges p {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    font-size: 16px;
-    padding-bottom: 10px;
-    margin: 10px 0px 20px 15px;
-    margin-bottom: 0px;
-  }
-  .onlineChallenges button {
-    background-color: #E3170A;
-    color: #FFFFFF;
-    border: none;
-    font-weight: bolder;
-    font-size: 16px;
-    width: 215px;
-    height: 50px;
-    border-radius: 2.5px;
-    cursor: pointer;
-    margin: 10px 0px 20px 15px;
-    margin-bottom: 0;
-  }
-  .footer {
-    background-color: #011827;
-    color: #FFFFFF;
-    padding: 10% 10% 15px;
-    margin-top: 100px;
-    display: flex;
-    flex-direction: column;
-  }
-  .footer * {
-    margin: 0;
-    padding: 0;
-    font-size: 14px;
-  }
-  .footer .information h4 {
-    margin-bottom: 6.5px;
-  }
-  .footer .information p {
-    margin-bottom: 40px;
-  }
-  .footer div {
-    display: flex;
-    flex-direction: row;
-  }
-  .footer .siteMap {
-    margin-right: 50px;
-  }
-  .footer .siteMap h4 {
-    margin-bottom: 6.5px;
-  }
-  .footer .siteMap p {
-    display: flex;
-    flex-direction: column;
-  }
-  .footer .siteMap p:nth-of-type(2) {
-    margin-top: 1.5em;
-    margin-bottom: 40px;
-  }
-  .footer .socialMedia h4 {
-    margin-bottom: 6.5px;
-  }
-  .footer .socialMedia p {
-    display: flex;
-    flex-direction: column;
-  }
-}
 @media screen and (max-width: 619px) {
   .header {
     background-color: #011827;
@@ -424,7 +29,7 @@ body {
   .header .branding h1 {
     color: #FFFFFF;
     margin: 18px 0px 5px 8.5px;
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: 700;
   }
   .header .branding h1 span {
@@ -441,7 +46,7 @@ body {
     color: #FFFFFF;
     margin: 0;
     padding: 35px 65px 20px;
-    font-size: 10px;
+    font-size: 1rem;
     font-weight: 700;
     display: none;
   }
@@ -456,12 +61,13 @@ body {
     padding: 0;
     width: 100%;
     height: 220px;
+    margin-bottom: 10px;
   }
   .challengeButtons {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 10px;
   }
   .challengeButtons .on-siteButton {
     background-color: #8ACFE5;
@@ -508,7 +114,7 @@ body {
     margin: 0px 0px 4px 15px;
     font-style: italic;
     font-weight: 550;
-    font-size: 17px;
+    font-size: 1.7rem;
     padding-right: 50px;
   }
   .reviews .reviewBlock .reviewText img {
@@ -518,20 +124,21 @@ body {
   }
   .reviews .reviewBlock small {
     margin-left: 65px;
-    font-size: 13px;
+    font-size: 1.3rem;
   }
   .popularChallengesName {
     font-weight: 400;
-    font-size: 24.5px;
+    font-size: 2.4rem;
     display: flex;
     justify-content: center;
     margin-top: 70px;
+    margin-bottom: 5px;
   }
   .challengesTab {
     display: flex;
     overflow-x: auto;
     white-space: nowrap;
-    margin-bottom: 25px;
+    padding: 20px 25px 25px;
   }
   .challengesTab .popularChallenges:nth-child(2) {
     margin-left: 40px;
@@ -560,9 +167,9 @@ body {
     border-top-right-radius: 7px;
   }
   .challengesTab .popularChallenges h2 {
-    font-size: 19px;
+    font-size: 1.9rem;
     font-weight: 400;
-    padding: 2px 0px 1px 12px;
+    padding: 4px 0px 1px 12px;
   }
   .challengesTab .popularChallenges .stars {
     display: flex;
@@ -585,10 +192,10 @@ body {
     margin-right: 10px;
   }
   .challengesTab .popularChallenges .stars small {
-    font-size: 10px;
+    font-size: 1rem;
   }
   .challengesTab .popularChallenges p {
-    font-size: 13px;
+    font-size: 1.3rem;
     padding: 10px 13px;
   }
   .challengesTab .popularChallenges p span {
@@ -599,7 +206,7 @@ body {
     background-color: #E3170A;
     color: #FFFFFF;
     font-weight: 700;
-    font-size: 11px;
+    font-size: 1.1rem;
     border-radius: 3px;
     padding: 10px 25px;
     margin-left: 119px;
@@ -618,7 +225,7 @@ body {
   }
   .story p {
     color: #FFFFFF;
-    font-size: 20px;
+    font-size: 2rem;
     padding: 10px 10% 40px;
   }
   .story button {
@@ -648,7 +255,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    font-size: 25px;
+    font-size: 2.5rem;
     font-weight: bold;
     margin: 10px 0px 20px 15px;
   }
@@ -656,7 +263,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    font-size: 19px;
+    font-size: 1.9rem;
     padding-bottom: 10px;
     margin: 10px 0px 20px 15px;
   }
@@ -688,7 +295,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    font-size: 25px;
+    font-size: 2.5rem;
     font-weight: bold;
     margin: 10px 0px 20px 15px;
   }
@@ -696,7 +303,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    font-size: 19px;
+    font-size: 1.9rem;
     padding-bottom: 10px;
     margin: 10px 0px 20px 15px;
   }
@@ -720,7 +327,7 @@ body {
   .footer * {
     margin: 0;
     padding: 0;
-    font-size: 14px;
+    font-size: 1.4rem;
   }
   .footer .information h4 {
     margin-bottom: 6.5px;
@@ -731,18 +338,797 @@ body {
   .footer .siteMap h4 {
     margin-bottom: 6.5px;
   }
-  .footer .siteMap p {
+  .footer .siteMap span {
     display: flex;
     flex-direction: column;
   }
-  .footer .siteMap p:nth-of-type(2) {
+  .footer .siteMap span:nth-of-type(2) {
     margin-top: 1.5em;
     margin-bottom: 40px;
   }
   .footer .socialMedia h4 {
     margin-bottom: 6.5px;
   }
-  .footer .socialMedia p {
+  .footer .socialMedia span {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 619px) {
+  .header {
+    background-color: #011827;
+    width: 100%;
+    padding-bottom: 15px;
+  }
+  .header .branding {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+  }
+  .header .branding .logo {
+    width: 135px;
+    height: 90px;
+    margin-top: 15px;
+    margin-left: 20px;
+  }
+  .header .branding h1 {
+    color: #FFFFFF;
+    margin: 18px 0px 5px 8.5px;
+    font-size: 2.3rem;
+    font-weight: 700;
+  }
+  .header .branding h1 span {
+    display: block;
+  }
+  .header .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .header .menu a {
+    display: flex;
+    flex-direction: row;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 15px 40px 0px 40px;
+    font-size: 1.6rem;
+    font-weight: 700;
+  }
+  .header .menu a:hover {
+    color: #8ACFE5;
+  }
+  .largeImage {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 290px;
+    margin-bottom: 10px;
+  }
+  .smallImage {
+    display: none;
+  }
+  .challengeButtons {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  .challengeButtons .on-siteButton {
+    background-color: #8ACFE5;
+    color: #011827;
+    border: none;
+    font-weight: bolder;
+    font-size: 16px;
+    width: 215px;
+    height: 50px;
+    border-radius: 2.5px;
+    cursor: pointer;
+    margin-left: 30px;
+  }
+  .challengeButtons .onlineButton {
+    background-color: #E3170A;
+    color: #FFFFFF;
+    border: none;
+    font-weight: bolder;
+    font-size: 16px;
+    width: 215px;
+    height: 50px;
+    border-radius: 2.5px;
+    cursor: pointer;
+  }
+  .reviews {
+    display: flex;
+    margin-top: 30px;
+  }
+  .reviews .reviewBlock {
+    padding-left: 15px;
+  }
+  .reviews .reviewBlock .reviewText {
+    display: flex;
+  }
+  .reviews .reviewBlock .reviewText p {
+    margin: 0px 0px 4px 15px;
+    font-style: italic;
+    font-weight: 550;
+    font-size: 1.7rem;
+    padding-right: 50px;
+  }
+  .reviews .reviewBlock .reviewText img {
+    width: 55px;
+    height: 55px;
+    padding-top: 2px;
+  }
+  .reviews .reviewBlock small {
+    margin-left: 70px;
+    font-size: 1.3rem;
+  }
+  .popularChallengesName {
+    font-weight: 400;
+    font-size: 2.45rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    margin-bottom: 20px;
+  }
+  .challengesTab {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 30px 50px 50px;
+  }
+  .challengesTab .popularChallenges:nth-child(2) {
+    margin-left: 40px;
+  }
+  .challengesTab .popularChallenges:nth-child(3) {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .challengesTab .popularChallenges {
+    box-sizing: content-box;
+    width: 260px;
+    min-width: 260px;
+    height: 310px;
+    box-shadow: 0px 1px 6px #B6BDB5;
+    margin-left: 40px;
+    border-radius: 7px;
+  }
+  .challengesTab .popularChallenges * {
+    margin: 0;
+    padding: 0;
+  }
+  .challengesTab .popularChallenges img {
+    width: 100%;
+    height: 150px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+  }
+  .challengesTab .popularChallenges h2 {
+    font-size: 1.9rem;
+    font-weight: 400;
+    padding: 2px 0px 1px 12px;
+  }
+  .challengesTab .popularChallenges .stars {
+    display: flex;
+    align-items: center;
+    padding-left: 14px;
+    padding-bottom: 5px;
+  }
+  .challengesTab .popularChallenges .stars .filledStar {
+    width: 10px;
+    height: 10px;
+    background-image: url("Filled star.png");
+    background-size: cover;
+    margin-right: 6px;
+  }
+  .challengesTab .popularChallenges .stars .emptyStar {
+    width: 10px;
+    height: 10px;
+    background-image: url("Empty star.png");
+    background-size: cover;
+    margin-right: 10px;
+  }
+  .challengesTab .popularChallenges .stars small {
+    font-size: 1rem;
+  }
+  .challengesTab .popularChallenges p {
+    font-size: 1.3rem;
+    padding: 10px 13px;
+  }
+  .challengesTab .popularChallenges p span {
+    display: block;
+  }
+  .challengesTab .popularChallenges button {
+    border: none;
+    background-color: #E3170A;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 1.1rem;
+    border-radius: 3px;
+    padding: 10px 25px;
+    margin-left: 119px;
+    cursor: pointer;
+  }
+  .story {
+    background-color: #011827;
+    text-align: center;
+    margin-top: 50px;
+    padding: 60px 0px 70px;
+    width: 100%;
+  }
+  .story * {
+    margin: 0;
+    padding: 0;
+  }
+  .story p {
+    color: #FFFFFF;
+    font-size: 2rem;
+    padding: 10px 29% 40px;
+  }
+  .story button {
+    background-color: transparent;
+    color: #8ACFE5;
+    border: 1.5px solid #8ACFE5;
+    font-weight: bolder;
+    font-size: 16px;
+    width: 215px;
+    height: 50px;
+    border-radius: 2.5px;
+    cursor: pointer;
+  }
+  .on-siteChallenges {
+    padding-bottom: 25px;
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    width: 100%;
+    height: 310px;
+  }
+  .on-siteChallenges * {
+    margin: 0;
+    padding: 0;
+  }
+  .on-siteChallenges img {
+    width: 50%;
+    height: 100%;
+  }
+  .on-siteChallenges div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.5%;
+  }
+}
+@media screen and (min-width: 619px) and (min-width: 669px) {
+  .on-siteChallenges div {
+    padding: 2%;
+  }
+}
+@media screen and (min-width: 619px) and (min-width: 850px) {
+  .on-siteChallenges div {
+    width: 40%;
+    padding: 3%;
+  }
+}
+@media screen and (min-width: 619px) {
+  .on-siteChallenges h2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px 0px 20px 15px;
+    margin-top: 0;
+  }
+  .on-siteChallenges p {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-size: 16px;
+    padding-bottom: 10px;
+    margin: 10px 0px 20px 15px;
+    margin-bottom: 0px;
+  }
+  .on-siteChallenges button {
+    background-color: #E3170A;
+    color: #FFFFFF;
+    border: none;
+    font-weight: bolder;
+    font-size: 16px;
+    width: 215px;
+    height: 50px;
+    border-radius: 2.5px;
+    cursor: pointer;
+    margin: 10px 0px 20px 15px;
+    margin-bottom: 0;
+  }
+  .onlineChallenges {
+    padding-bottom: 25px;
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    width: 100%;
+    height: 310px;
+    flex-direction: row-reverse;
+  }
+  .onlineChallenges * {
+    margin: 0;
+    padding: 0;
+  }
+  .onlineChallenges img {
+    width: 50%;
+    height: 100%;
+  }
+  .onlineChallenges div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.5%;
+  }
+}
+@media screen and (min-width: 619px) and (min-width: 669px) {
+  .onlineChallenges div {
+    padding: 2%;
+  }
+}
+@media screen and (min-width: 619px) and (min-width: 850px) {
+  .onlineChallenges div {
+    width: 40%;
+    padding: 3%;
+  }
+}
+@media screen and (min-width: 619px) {
+  .onlineChallenges h2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px 0px 20px 15px;
+    margin-top: 0;
+  }
+  .onlineChallenges p {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-size: 16px;
+    padding-bottom: 10px;
+    margin: 10px 0px 20px 15px;
+    margin-bottom: 0px;
+  }
+  .onlineChallenges button {
+    background-color: #E3170A;
+    color: #FFFFFF;
+    border: none;
+    font-weight: bolder;
+    font-size: 16px;
+    width: 215px;
+    height: 50px;
+    border-radius: 2.5px;
+    cursor: pointer;
+    margin: 10px 0px 20px 15px;
+    margin-bottom: 0;
+  }
+  .footer {
+    background-color: #011827;
+    color: #FFFFFF;
+    padding: 7% 7% 15px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+  }
+  .footer * {
+    margin: 0;
+    padding: 0;
+    font-size: 1.4rem;
+  }
+  .footer .information h4 {
+    margin-bottom: 6.5px;
+  }
+  .footer .information p {
+    margin-bottom: 40px;
+  }
+  .footer div {
+    display: flex;
+    flex-direction: row;
+  }
+  .footer .siteMap {
+    margin-right: 50px;
+  }
+  .footer .siteMap h4 {
+    margin-bottom: 6.5px;
+  }
+  .footer .siteMap span {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer .siteMap span:nth-of-type(2) {
+    margin-top: 1.5rem;
+    margin-bottom: 40px;
+  }
+  .footer .socialMedia h4 {
+    margin-bottom: 6.5px;
+  }
+  .footer .socialMedia span {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 1001px) {
+  .header {
+    background-color: #011827;
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  .header .branding {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+  }
+  .header .branding .logo {
+    width: 145px;
+    height: 100px;
+    margin-top: 15px;
+    margin-left: 20px;
+  }
+  .header .branding h1 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    color: #FFFFFF;
+    margin: 18px 0px 5px 8.5px;
+    font-size: 3rem;
+    font-weight: 700;
+  }
+  .header .branding h1 span {
+    margin-right: 8px;
+  }
+  .header .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .header .menu a {
+    display: flex;
+    flex-direction: row;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 15px 40px 0px 40px;
+    font-size: 2.1rem;
+    font-weight: 700;
+  }
+  .header .menu a:hover {
+    color: #8ACFE5;
+  }
+  .largeImage {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 440px;
+  }
+  .smallImage {
+    display: none;
+  }
+  body .challengeButtons:first-of-type {
+    transform: translateY(-50px);
+  }
+  .challengeButtons {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .challengeButtons .on-siteButton {
+    background-color: #8ACFE5;
+    color: #011827;
+    border: none;
+    font-weight: bolder;
+    font-size: 16px;
+    width: 215px;
+    height: 50px;
+    border-radius: 2.5px;
+    cursor: pointer;
+    margin-left: 15px;
+  }
+  .challengeButtons .onlineButton {
+    background-color: #E3170A;
+    color: #FFFFFF;
+    border: none;
+    font-weight: bolder;
+    font-size: 16px;
+    width: 215px;
+    height: 50px;
+    border-radius: 2.5px;
+    cursor: pointer;
+  }
+  .reviews {
+    display: flex;
+    margin-top: 30px;
+  }
+  .reviews .reviewBlock {
+    padding-left: 15px;
+  }
+  .reviews .reviewBlock .reviewText {
+    display: flex;
+  }
+  .reviews .reviewBlock .reviewText p {
+    margin: 0px 0px 4px 15px;
+    font-style: italic;
+    font-weight: 550;
+    font-size: 1.7rem;
+    padding-right: 50px;
+  }
+  .reviews .reviewBlock .reviewText img {
+    width: 50px;
+    height: 50px;
+    padding-top: 2px;
+  }
+  .reviews .reviewBlock small {
+    margin-left: 65px;
+    font-size: 1.3rem;
+  }
+  .popularChallengesName {
+    font-weight: 400;
+    font-size: 2.45rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    margin-bottom: 50px;
+  }
+  .challengesTab {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-bottom: 50px;
+  }
+  .challengesTab .popularChallenges:nth-child(2) {
+    margin-left: 40px;
+  }
+  .challengesTab .popularChallenges:nth-child(3) {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .challengesTab .popularChallenges {
+    box-sizing: content-box;
+    width: 260px;
+    min-width: 260px;
+    height: 310px;
+    box-shadow: 0px 1px 6px #B6BDB5;
+    margin-left: 40px;
+    border-radius: 7px;
+  }
+  .challengesTab .popularChallenges * {
+    margin: 0;
+    padding: 0;
+  }
+  .challengesTab .popularChallenges img {
+    width: 100%;
+    height: 150px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+  }
+  .challengesTab .popularChallenges h2 {
+    font-size: 1.9rem;
+    font-weight: 400;
+    padding: 2px 0px 1px 12px;
+  }
+  .challengesTab .popularChallenges .stars {
+    display: flex;
+    align-items: center;
+    padding-left: 14px;
+    padding-bottom: 5px;
+  }
+  .challengesTab .popularChallenges .stars .filledStar {
+    width: 10px;
+    height: 10px;
+    background-image: url("Filled star.png");
+    background-size: cover;
+    margin-right: 6px;
+  }
+  .challengesTab .popularChallenges .stars .emptyStar {
+    width: 10px;
+    height: 10px;
+    background-image: url("Empty star.png");
+    background-size: cover;
+    margin-right: 10px;
+  }
+  .challengesTab .popularChallenges .stars small {
+    font-size: 1rem;
+  }
+  .challengesTab .popularChallenges p {
+    font-size: 1.3rem;
+    padding: 10px 13px;
+  }
+  .challengesTab .popularChallenges p span {
+    display: block;
+  }
+  .challengesTab .popularChallenges button {
+    border: none;
+    background-color: #E3170A;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 1.1rem;
+    border-radius: 3px;
+    padding: 10px 25px;
+    margin-left: 119px;
+    cursor: pointer;
+  }
+  .story {
+    background-color: #011827;
+    text-align: center;
+    margin-top: 50px;
+    padding: 60px 0px 70px;
+    width: 100%;
+  }
+  .story * {
+    margin: 0;
+    padding: 0;
+  }
+  .story p {
+    color: #FFFFFF;
+    font-size: 2rem;
+    padding: 10px 29% 40px;
+  }
+  .story button {
+    background-color: transparent;
+    color: #8ACFE5;
+    border: 1.5px solid #8ACFE5;
+    font-weight: bolder;
+    font-size: 16px;
+    width: 215px;
+    height: 50px;
+    border-radius: 2.5px;
+    cursor: pointer;
+  }
+  .on-siteChallenges {
+    padding-bottom: 25px;
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    width: 100%;
+    height: 360px;
+  }
+  .on-siteChallenges * {
+    margin: 0;
+    padding: 0;
+  }
+  .on-siteChallenges img {
+    position: relative;
+    width: 50%;
+    height: 100%;
+  }
+  .on-siteChallenges div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5%;
+  }
+  .on-siteChallenges h2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px 0px 20px 15px;
+    margin-top: 0;
+  }
+  .on-siteChallenges p {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-size: 16px;
+    padding-bottom: 10px;
+    margin: 10px 0px 20px 15px;
+    margin-bottom: 0px;
+  }
+  .on-siteChallenges button {
+    background-color: #E3170A;
+    color: #FFFFFF;
+    border: none;
+    font-weight: bolder;
+    font-size: 16px;
+    width: 215px;
+    height: 50px;
+    border-radius: 2.5px;
+    cursor: pointer;
+    margin: 10px 0px 20px 15px;
+    margin-bottom: 0;
+  }
+  .onlineChallenges {
+    padding-bottom: 25px;
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    width: 100%;
+    height: 360px;
+    flex-direction: row-reverse;
+  }
+  .onlineChallenges * {
+    margin: 0;
+    padding: 0;
+  }
+  .onlineChallenges img {
+    position: relative;
+    width: 50%;
+    height: 100%;
+  }
+  .onlineChallenges div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5%;
+  }
+  .onlineChallenges h2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px 0px 20px 15px;
+    margin-top: 0;
+  }
+  .onlineChallenges p {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-size: 16px;
+    padding-bottom: 10px;
+    margin: 10px 0px 20px 15px;
+    margin-bottom: 0px;
+  }
+  .onlineChallenges button {
+    background-color: #E3170A;
+    color: #FFFFFF;
+    border: none;
+    font-weight: bolder;
+    font-size: 16px;
+    width: 215px;
+    height: 50px;
+    border-radius: 2.5px;
+    cursor: pointer;
+    margin: 10px 0px 20px 15px;
+    margin-bottom: 0;
+  }
+  .footer {
+    background-color: #011827;
+    color: #FFFFFF;
+    padding: 10% 10% 15px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+  }
+  .footer * {
+    margin: 0;
+    padding: 0;
+    font-size: 1.4rem;
+  }
+  .footer .information h4 {
+    margin-bottom: 6.5px;
+  }
+  .footer .information p {
+    margin-bottom: 40px;
+  }
+  .footer div {
+    display: flex;
+    flex-direction: row;
+  }
+  .footer .siteMap {
+    margin-right: 50px;
+  }
+  .footer .siteMap h4 {
+    margin-bottom: 6.5px;
+  }
+  .footer .siteMap span {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer .siteMap span:nth-of-type(2) {
+    margin-top: 1.5rem;
+    margin-bottom: 40px;
+  }
+  .footer .socialMedia h4 {
+    margin-bottom: 6.5px;
+  }
+  .footer .socialMedia span {
     display: flex;
     flex-direction: column;
   }
