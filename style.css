@@ -52,7 +52,7 @@ body {
   .header .links p:hover {
     color: #8ACFE5;
   }
-  .bigImage {
+  .largeImage {
     margin: 0;
     padding: 0;
     width: 100%;
@@ -233,7 +233,8 @@ body {
     padding-bottom: 25px;
     display: flex;
     flex-direction: row;
-    padding: 0;
+    padding: 0px;
+    height: 310px;
   }
   .on-siteChallenges * {
     margin: 0;
@@ -244,23 +245,41 @@ body {
     height: 100%;
   }
   .on-siteChallenges div {
-    padding: 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.5%;
   }
+}
+@media screen and (min-width: 619px) and (min-width: 669px) {
+  .on-siteChallenges div {
+    padding: 2%;
+  }
+}
+@media screen and (min-width: 619px) and (min-width: 850px) {
+  .on-siteChallenges div {
+    width: 40%;
+    padding: 3%;
+  }
+}
+@media screen and (min-width: 619px) {
   .on-siteChallenges h2 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: bold;
     margin: 10px 0px 20px 15px;
+    margin-top: 0;
   }
   .on-siteChallenges p {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    font-size: 18px;
+    font-size: 16px;
     padding-bottom: 10px;
     margin: 10px 0px 20px 15px;
+    margin-bottom: 0px;
   }
   .on-siteChallenges button {
     background-color: #E3170A;
@@ -273,12 +292,14 @@ body {
     border-radius: 2.5px;
     cursor: pointer;
     margin: 10px 0px 20px 15px;
+    margin-bottom: 0;
   }
   .onlineChallenges {
     padding-bottom: 25px;
     display: flex;
     flex-direction: row;
-    padding: 0;
+    padding: 0px;
+    height: 310px;
     flex-direction: row-reverse;
   }
   .onlineChallenges * {
@@ -290,23 +311,41 @@ body {
     height: 100%;
   }
   .onlineChallenges div {
-    padding: 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.5%;
   }
+}
+@media screen and (min-width: 619px) and (min-width: 669px) {
+  .onlineChallenges div {
+    padding: 2%;
+  }
+}
+@media screen and (min-width: 619px) and (min-width: 850px) {
+  .onlineChallenges div {
+    width: 40%;
+    padding: 3%;
+  }
+}
+@media screen and (min-width: 619px) {
   .onlineChallenges h2 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: bold;
     margin: 10px 0px 20px 15px;
+    margin-top: 0;
   }
   .onlineChallenges p {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    font-size: 18px;
+    font-size: 16px;
     padding-bottom: 10px;
     margin: 10px 0px 20px 15px;
+    margin-bottom: 0px;
   }
   .onlineChallenges button {
     background-color: #E3170A;
@@ -319,6 +358,7 @@ body {
     border-radius: 2.5px;
     cursor: pointer;
     margin: 10px 0px 20px 15px;
+    margin-bottom: 0;
   }
   .footer {
     background-color: #011827;
@@ -408,7 +448,7 @@ body {
   .header .links p:hover {
     color: #8ACFE5;
   }
-  .bigImage {
+  .largeImage {
     display: none;
   }
   .smallImage {
