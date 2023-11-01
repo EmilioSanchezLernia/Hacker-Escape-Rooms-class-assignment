@@ -1,19 +1,19 @@
-@media screen and (min-width: 1001px) {
+@media screen and (min-width: 1499px) {
 
     .header {
         background-color: #011827;
         width: 100%;
-        padding-bottom: 20px;
+        padding-bottom: 25px;
         padding-top: 10px;
 
         .branding {
             display: flex;
             flex-direction: row;
-            margin-bottom: 30px;
+            margin-bottom: 40px;
 
             .logo {
-                width: 140px;
-                height: 90px;
+                width: 160px;
+                height: 105px;
                 margin-top: 15px;
                 margin-left: 20px;
             }
@@ -23,12 +23,12 @@
                 flex-direction: row;
                 align-items: flex-end;
                 color: #FFFFFF;
-                margin: 18px 0px 5px 20px;
-                font-size: 3.5rem;
+                margin: 18px 0px 5px 25px;
+                font-size: 4.5rem;
                 font-weight: 700;
 
                 span {
-                    margin-right: 8px;
+                    margin-right: 10px;
                 }
             }
         }
@@ -42,9 +42,9 @@
                 display: flex;
                 flex-direction: row;
                 color: #FFFFFF;
-                margin: 0px 7px;
-                padding: 15px 40px 0px 40px;
-                font-size: 2.1rem;
+                margin: 0px 7px 0px 90px;
+                padding: 15px 50px 0px;
+                font-size: 3rem;
                 font-weight: 700;
             }
 
@@ -58,7 +58,7 @@
     .largeImage {
         @include removeMarginAndPadding;
         width: 100%;
-        height: 440px;
+        height: 520px;
     }
 
     .smallImage {
@@ -67,7 +67,7 @@
 
     body {
         .challengeButtons:first-of-type {
-            transform: translateY(-50px);
+            transform: translateY(-65px);
         }
     }
 
@@ -78,12 +78,12 @@
         margin-top: 20px;
 
         .on-siteButton {
-            @include largeOn-siteButtonStyle;
-            margin-left: 15px;
+            @include hugeOn-siteButtonStyle;
+            margin-left: 20px;
         }
 
         .onlineButton {
-            @include largeRedButtonStyle;
+            @include hugeRedButtonStyle;
         }
     }
 
@@ -98,8 +98,8 @@
         }
 
         .reviewBlock {
-            padding-right: 4%;
-            margin-left: 120px;
+            padding-right: 5%;
+            margin-left: 150px;
 
             .reviewText {
                 display: flex;
@@ -109,20 +109,20 @@
                     margin: 0px 0px 4px 15px;
                     font-style: italic;
                     font-weight: 550;
-                    font-size: 2rem;
+                    font-size: 2.6rem;
                     padding-right: 50px;
                 }
 
                 img {
-                    width: 80px;
-                    height: 80px;
+                    width: 110px;
+                    height: 110px;
                     padding-top: 2px;
                 }
             }
 
             small {
-                margin-left: 95px;
-                font-size: 1.7rem;
+                margin-left: 125px;
+                font-size: 2rem;
                 display: flex;
                 flex-direction: column;
             }
@@ -131,7 +131,7 @@
 
     .popularChallengesName {
         font-weight: 400;
-        font-size: 3rem;
+        font-size: 4.5rem;
         display: flex;
         justify-content: center;
         margin-top: 70px;
@@ -141,16 +141,23 @@
     .challengesTab {
         display: flex;
         justify-content: center;
-        padding-bottom: 50px;
+        padding-bottom: 65px;
+
+        .popularChallenges:nth-child(2) {
+            margin-left: 50px;
+        }
+
+        .popularChallenges:nth-child(3) {
+            margin-left: 50px;
+        }
 
         .popularChallenges {
             box-sizing: content-box;
-            width: 310px;
-            min-width: 310px;
-            height: 370px;
-            box-shadow: 0px 1px 6px #B6BDB5;
-            border-radius: 7px;
-
+            width: 403px;
+            min-width: 403px;
+            height: 481px;
+            box-shadow: 0px 1px 8px #B6BDB5;
+            border-radius: 9px;
 
             * {
                 @include removeMarginAndPadding;
@@ -158,68 +165,54 @@
 
             img {
                 width: 100%;
-                height: 190px;
-                border-top-left-radius: 7px;
-                border-top-right-radius: 7px;
+                height: 247px;
+                border-top-left-radius: 9px;
+                border-top-right-radius: 9px;
             }
 
             h2 {
-                font-size: 2.3rem;
+                font-size: 3rem;
                 font-weight: 400;
-                padding: 5px 0px 1px 12px;
+                padding: 6px 0px 1px 16px;
             }
 
             .stars {
                 display: flex;
                 align-items: center;
-                padding-left: 12px;
-                padding-bottom: 5px;
+                padding-left: 15px;
+                padding-bottom: 6px;
 
                 .filledStar {
-                    width: 13px;
-                    height: 13px;
-                    background-image: url('Filled star.png');
-                    background-size: cover;
-                    margin-right: 6px;
+                    width: 16px;
+                    height: 16px;
+                    margin-right: 7px;
                 }
 
                 .emptyStar {
-
-                    width: 13px;
-                    height: 13px;
-                    background-image: url('Empty star.png');
-                    background-size: cover;
-                    margin-right: 10px;
+                    width: 16px;
+                    height: 16px;
+                    margin-right: 12px;
                 }
 
                 small {
-                    font-size: 1.2rem;
-                    margin-left: 105px;
+                    font-size: 1.56rem;
+                    margin-left: 136px;
                 }
             }
 
             p {
-                font-size: 1.6rem;
-                padding: 10px 13px;
-
-                span {
-                    display: block;
-                }
+                font-size: 2.08rem;
+                padding: 13px 16px;
             }
 
             button {
-                border: none;
-                background-color: #E3170A;
-                color: #FFFFFF;
-                font-weight: bold;
-                font-size: 1.2rem;
-                border-radius: 3px;
-                padding: 11px 32px;
-                margin-left: 145px;
-                cursor: pointer;
+                font-size: 1.56rem;
+                padding: 14px 41.6px;
+                margin-left: 188.5px;
             }
         }
     }
+
 
     .story {
         background-color: #011827;
@@ -234,40 +227,40 @@
 
         p {
             color: #FFFFFF;
-            font-size: 2.3rem;
+            font-size: 3rem;
             padding: 10px 29% 35px;
         }
 
         button {
-            @include largeStoryButtonStyle;
+            @include hugeStoryButtonStyle;
         }
     }
 
     .on-siteChallenges {
-        @include largeChallengesStyle;
+        @include hugeChallengesStyle;
     }
 
     .onlineChallenges {
-        @include largeChallengesStyle;
+        @include hugeChallengesStyle;
         flex-direction: row-reverse;
     }
 
     .footer {
         background-color: #011827;
         color: #FFFFFF;
-        padding: 90px 90px 70px;
-        margin-top: 100px;
+        padding: 150px 90px 140px;
+        margin-top: 200px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
 
         * {
             @include removeMarginAndPadding;
-            font-size: 1.5rem;
+            font-size: 2rem;
         }
 
         .information {
-            width: 350px;
+            width: 460px;
 
             h4 {
                 margin-bottom: $bottomMargins;
@@ -279,12 +272,12 @@
         }
 
         div {
-            margin-right: 70px;
+            margin-right: 100px;
         }
 
         .siteMap {
             margin-right: 50px;
-            width: 90px;
+            width: 110px;
             margin-left: 300px;
             transform: translateX(-30px);
 

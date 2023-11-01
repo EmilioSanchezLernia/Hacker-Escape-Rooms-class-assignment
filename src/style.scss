@@ -237,6 +237,94 @@ $bottomMargins: 6.5px;
     }
 }
 
+@mixin hugeChallengesStyle {
+    padding-bottom: 25px;
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    width: 100%;
+    height: 500px;
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    img {
+        width: 50%;
+        height: 100%;
+    }
+
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 5%;
+    }
+
+    h2 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        font-size: 3.7rem;
+        font-weight: bold;
+        margin: $challengeMargins;
+        margin-top: 0;
+    }
+
+    p {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        font-size: 2.8rem;
+        padding-bottom: 10px;
+        margin: $challengeMargins;
+        margin-bottom: 0px;
+    }
+
+    button {
+        @include hugeRedButtonStyle;
+        margin: $challengeMargins;
+        margin-bottom: 0;
+    }
+}
+
+@mixin hugeRedButtonStyle {
+    background-color: #E3170A;
+    color: #FFFFFF;
+    border: none;
+    font-weight: bolder;
+    font-size: 2.6rem;
+    width: 340px;
+    height: 75px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+@mixin hugeOn-siteButtonStyle {
+    background-color: #8ACFE5;
+    color: #011827;
+    border: none;
+    font-weight: bolder;
+    font-size: 2.6rem;
+    width: 340px;
+    height: 75px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+@mixin hugeStoryButtonStyle {
+    background-color: transparent;
+    color: #8ACFE5;
+    border: 2px solid #8ACFE5;
+    font-weight: bolder;
+    font-size: 2.6rem;
+    width: 340px;
+    height: 75px;
+    border-radius: 2.5px;
+    cursor: pointer;
+}
+
 @mixin removeMarginAndPadding {
     margin: 0;
     padding: 0;
@@ -257,3 +345,4 @@ body {
 @import 'smallSizeStyle';
 @import 'mediumSizeStyle';
 @import 'largeSizeStyle';
+@import 'hugeSizeStyle';
