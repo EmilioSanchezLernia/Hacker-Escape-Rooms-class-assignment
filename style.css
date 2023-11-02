@@ -1322,7 +1322,7 @@ body {
   }
   .challengesTab .popularChallenges .stars small {
     font-size: 1.56rem;
-    margin-left: 136px;
+    margin-left: 140px;
   }
   .challengesTab .popularChallenges p {
     font-size: 2.08rem;
@@ -1470,7 +1470,7 @@ body {
   .footer {
     background-color: #011827;
     color: #FFFFFF;
-    padding: 150px 90px 140px;
+    padding: 150px 90px 130px;
     margin-top: 200px;
     display: flex;
     flex-direction: row;
