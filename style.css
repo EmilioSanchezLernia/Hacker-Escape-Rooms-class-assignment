@@ -590,6 +590,7 @@ body {
   .on-siteChallenges img {
     width: 50%;
     height: 100%;
+    object-fit: cover;
   }
   .on-siteChallenges div {
     display: flex;
@@ -657,6 +658,7 @@ body {
   .onlineChallenges img {
     width: 50%;
     height: 100%;
+    object-fit: cover;
   }
   .onlineChallenges div {
     display: flex;
@@ -987,7 +989,7 @@ body {
     flex-direction: row;
     padding: 0px;
     width: 100%;
-    height: 420px;
+    height: 400px;
   }
   .on-siteChallenges * {
     margin: 0;
@@ -996,6 +998,7 @@ body {
   .on-siteChallenges img {
     width: 50%;
     height: 100%;
+    object-fit: cover;
   }
   .on-siteChallenges div {
     display: flex;
@@ -1040,7 +1043,7 @@ body {
     flex-direction: row;
     padding: 0px;
     width: 100%;
-    height: 420px;
+    height: 400px;
     flex-direction: row-reverse;
   }
   .onlineChallenges * {
@@ -1050,6 +1053,7 @@ body {
   .onlineChallenges img {
     width: 50%;
     height: 100%;
+    object-fit: cover;
   }
   .onlineChallenges div {
     display: flex;
@@ -1366,7 +1370,7 @@ body {
     flex-direction: row;
     padding: 0px;
     width: 100%;
-    height: 570px;
+    height: 520px;
   }
   .on-siteChallenges * {
     margin: 0;
@@ -1375,6 +1379,7 @@ body {
   .on-siteChallenges img {
     width: 50%;
     height: 100%;
+    object-fit: cover;
   }
   .on-siteChallenges div {
     display: flex;
@@ -1419,7 +1424,7 @@ body {
     flex-direction: row;
     padding: 0px;
     width: 100%;
-    height: 570px;
+    height: 520px;
     flex-direction: row-reverse;
   }
   .onlineChallenges * {
@@ -1429,6 +1434,7 @@ body {
   .onlineChallenges img {
     width: 50%;
     height: 100%;
+    object-fit: cover;
   }
   .onlineChallenges div {
     display: flex;

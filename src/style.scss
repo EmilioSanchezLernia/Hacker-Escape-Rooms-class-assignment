@@ -140,6 +140,7 @@ $bottomMargins: 6.5px;
     img {
         width: 50%;
         height: 100%;
+        object-fit: cover;
     }
 
     div {
@@ -191,7 +192,7 @@ $bottomMargins: 6.5px;
     flex-direction: row;
     padding: 0px;
     width: 100%;
-    height: 420px;
+    height: 400px;
 
     * {
         margin: 0;
@@ -201,6 +202,7 @@ $bottomMargins: 6.5px;
     img {
         width: 50%;
         height: 100%;
+        object-fit: cover;
     }
 
     div {
@@ -243,7 +245,7 @@ $bottomMargins: 6.5px;
     flex-direction: row;
     padding: 0px;
     width: 100%;
-    height: 570px;
+    height: 520px;
 
     * {
         margin: 0;
@@ -253,6 +255,7 @@ $bottomMargins: 6.5px;
     img {
         width: 50%;
         height: 100%;
+        object-fit: cover;
     }
 
     div {
