@@ -29,10 +29,18 @@
             }
         }
 
-        .menu {
+        .hamburgerMenu {
+            display: none;
+        }
+
+        .frontLayer {
             display: flex;
             flex-direction: row;
             justify-content: space-evenly;
+
+            button {
+                display: none;
+            }
 
             a {
                 display: flex;
