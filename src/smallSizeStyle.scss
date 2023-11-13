@@ -151,11 +151,14 @@
             }
         }
 
-
         .hidden {
             display: none;
         }
 
+    }
+
+    .noScroll {
+        overflow: hidden;
     }
 
     .largeImage {
